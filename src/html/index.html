@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/index-header.css">
+    <link rel="stylesheet" href="../styles/index-body.css">
 </head>
 
 <body>
@@ -58,6 +61,22 @@
             </a>
             <div class="user">
                 <img src="../img/user.png" alt="">
+                <div class="user-list">
+                    <ul>
+                        <li>
+                            <a href="">立即登录</a>
+                        </li>
+                        <li>
+                            <a href="">立即注册</a>
+                        </li>
+                        <li>
+                            <a href="">我的订单</a>
+                        </li>
+                        <li>
+                            <a href="">M码通道</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="header-search">
                 <input type="text" placeholder="魅族 17">
@@ -67,6 +86,138 @@
             </div>
         </div>
     </div>
+
+    <!-- 轮播图 -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <a href=""><img src="../img/m6.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="../img/m8.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="../img/m5.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="../img/m4.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="../img/m3.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="../img/m2.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="../img/m1.jpg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="../img/m7.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!-- 广告条 -->
+    <div class="section-box">
+        <div class="section-box-adv">
+            <ul class="wrapper">
+                <li>
+                    <a href="">
+                        <img src="../img/m9.jpg" alt="">
+                        <em>如然之光</em>
+                        <p>健康照明系列</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../img/1.png" alt="">
+                        <em>5G之家</em>
+                        <p>电信套餐享大额补贴</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../img/2.png" alt="">
+                        <em>魅族年度影像大赛</em>
+                        <p>将生活一按成诗</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../img/m10.jpg" alt="">
+                        <em>mCycle</em>
+                        <p>以旧换新赢红包</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 主体部分 -->
+    <main>
+        <div class="main-phone-title">
+            <h3>手机</h3>
+        </div>
+        <div class="main-phone-adv">
+            <a href="">
+                <img src="../img/m11.jpg" alt="">
+            </a>
+        </div>
+        <div class="phone-list wrapper">
+            <ul>
+                <li class="big big1">
+                    <a href="">
+                        <img src="../img/3.png" alt="">
+                        <span class="phone-info">
+                            <span>魅族 17</span>
+                        <span>限时领券至高立省400 | 3期免息</span>
+                        <span><i>￥</i>3699</span>
+                        </span>
+                        <span class="phone-red">领劵</span>
+                    </a>
+                </li>
+                <li class="big big2">
+                    <a href="">
+                        <img src="../img/4.png" alt="">
+                        <span class="phone-info">
+                            <span>魅族 17 Pro</span>
+                        <span>限时领券至高立省400 | 3期免息</span>
+                        <span><i>￥</i>4299</span>
+                        </span>
+                        <span class="phone-red">领劵</span>
+                    </a>
+                </li>
+                <li class="phone1">
+                    <a href="">
+                        <img src="../img/5.png" alt="">
+                        <span class="phone-info">
+                            <span>魅族 17</span>
+                        <span>限时领券至高立省400 | 3期免息</span>
+                        <span><i>￥</i>3699</span>
+                        </span>
+                        <span class="phone-red">领劵</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

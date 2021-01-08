@@ -1,0 +1,109 @@
+@charset 'utf-8';
+main{
+    background: #f4f4f4;
+    .main-phone-title{
+        text-align: center;
+        h3{
+            font-size: 30px;
+            margin-top: 0;
+        }
+    }
+    .main-phone-adv{
+        height: 450px;
+        a{
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: opacity .2s linear;
+            overflow: hidden;
+            &:hover{
+                opacity: .8;
+            }
+            img{
+                width: auto;
+                height: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+    .phone-list{
+        overflow: hidden;
+        .big{
+            width: 615px;
+            height: 610px;
+        }
+        li{
+            width: 303px;
+            height: 375px;
+            float: left;
+            margin-top: 10px;
+            margin-right: 9px;
+            background:#fff;
+            transition: all .3s ease;
+            &:hover{
+                box-shadow: 0 15px 30px rgba(0,0,0,.1);
+            }
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                position: relative;
+                img{
+                    height: 460px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 55px;
+                }
+                span{
+                    display: block;
+                }
+                .phone-info{
+                    position: absolute;
+                    left: 0;
+                    top: 58px;
+                    text-align: center;
+                    width: 100%;
+                    span:nth-child(1){
+                        font-size: 28px;
+                        color: #333333;
+                    }
+                    span:nth-child(2){
+                        font-size: 18px;
+                        color: #333333;
+                        margin-bottom: 3px;
+                    }
+                    span:nth-child(3){
+                        display: inline-block;
+                        color: #c00;
+                        font-size: 22px;
+                        i{
+                            font-size: 14px;
+                            font-style: normal;
+                        }
+                    }
+                }
+                .phone-red{
+                    position: absolute;
+                    top: 30px;
+                    left: 30px;
+                    width: 60px;
+                    height: 60px;
+                    color: #fff;
+                    line-height: 60px;
+                    font-size: 16px;
+                    text-align: center;
+                    border-radius: 50%;
+                    background-image: linear-gradient(120deg,#ff3149,#ff64a6);
+                }
+            }
+        }
+        .big2{
+            margin-right: 0;
+        }
+    }
+}

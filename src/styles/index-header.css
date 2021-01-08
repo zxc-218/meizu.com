@@ -17,6 +17,12 @@ a {
   width: 1240px;
   margin: 0 auto;
 }
+.meizu-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
 .meizu-header .meizu-header-logo {
   float: left;
   padding: 28px 0;
@@ -41,6 +47,7 @@ a {
 }
 .meizu-header .meizu-header-link a:hover {
   color: #008cff;
+  text-decoration: none;
 }
 .meizu-header .shop-cart {
   float: right;
@@ -66,11 +73,39 @@ a {
 }
 .meizu-header .user {
   float: right;
+  position: relative;
+  cursor: pointer;
+}
+.meizu-header .user:hover .user-list {
+  display: block;
 }
 .meizu-header .user img {
   width: 29px;
   height: 29px;
   margin: 25px 0 0 8px;
+}
+.meizu-header .user .user-list {
+  width: 100px;
+  background: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding: 7px 0;
+  border-radius: 2px;
+  display: none;
+  position: absolute;
+  top: 65px;
+  left: -28px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.meizu-header .user .user-list li {
+  height: 33px;
+  line-height: 33px;
+}
+.meizu-header .user .user-list li a {
+  color: #515151;
+}
+.meizu-header .user .user-list li a:hover {
+  color: #008cff;
 }
 .meizu-header .header-search {
   position: relative;
@@ -94,4 +129,45 @@ a {
   position: absolute;
   right: 4px;
   top: 4px;
+}
+.carousel-inner a {
+  display: block;
+  height: 680px;
+  width: 2560px;
+  transform: translateX(-20%);
+}
+.section-box {
+  background: #f4f4f4;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+.section-box .section-box-adv {
+  padding-bottom: 45px;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+.section-box .section-box-adv li {
+  float: left;
+  width: 25%;
+  padding-top: 45px;
+}
+.section-box .section-box-adv li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+.section-box .section-box-adv li a img {
+  height: 130px;
+}
+.section-box .section-box-adv li a em {
+  display: block;
+  font-size: 20px;
+  color: #333;
+}
+.section-box .section-box-adv li a p {
+  color: #999;
 }
