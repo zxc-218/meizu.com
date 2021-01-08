@@ -33,11 +33,14 @@ a {
 .meizu-header .meizu-header-link .meizu-header-product {
   float: left;
 }
-.meizu-header .meizu-header-link .meizu-header-product a {
+.meizu-header .meizu-header-link a {
   display: block;
   font-size: 14px;
   padding: 30px 20px 30px;
   color: #515151;
+}
+.meizu-header .meizu-header-link a:hover {
+  color: #008cff;
 }
 .meizu-header .shop-cart {
   float: right;
