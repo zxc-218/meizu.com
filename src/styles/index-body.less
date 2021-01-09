@@ -17,6 +17,7 @@ main{
             height: 100%;
             transition: opacity .2s linear;
             overflow: hidden;
+            text-decoration: none;
             &:hover{
                 opacity: .8;
             }
@@ -32,9 +33,13 @@ main{
     }
     .phone-list{
         overflow: hidden;
+        margin-bottom: 50px;
         .big{
             width: 615px;
             height: 610px;
+            .phone-info{
+                top: 58px;
+            }
         }
         li{
             width: 303px;
@@ -53,7 +58,7 @@ main{
                 height: 100%;
                 text-align: center;
                 position: relative;
-                img{
+                .goods-img1{
                     height: 460px;
                     position: absolute;
                     bottom: 0;
@@ -65,16 +70,17 @@ main{
                 .phone-info{
                     position: absolute;
                     left: 0;
-                    top: 58px;
+                    top: 270px;
                     text-align: center;
                     width: 100%;
-                    span:nth-child(1){
-                        font-size: 28px;
-                        color: #333333;
+                    .goods-name{
+                        font-size: 28px ;
+                        color: #333;
+                        margin-bottom: 0;
                     }
-                    span:nth-child(2){
+                    .goods-desc{
                         font-size: 18px;
-                        color: #333333;
+                        color: #333;
                         margin-bottom: 3px;
                     }
                     span:nth-child(3){
@@ -101,9 +107,152 @@ main{
                     background-image: linear-gradient(120deg,#ff3149,#ff64a6);
                 }
             }
+            .goods-img2{
+                height: 230px;
+                margin-top: 30px;
+            }
+            .goods-img3{
+                margin-top: 0;
+                width: 100%;
+                height: 100%
+            }
         }
         .big2{
             margin-right: 0;
+        }
+        .last{
+            margin-right: 0;
+        }
+        .phone{
+            .phone-info{
+                .goods-name{
+                    color: #333;
+                    font-size: 16px;
+                    margin-bottom: 2px;
+                }
+                .goods-desc{
+                    color: #999;
+                    font-size: 14px;
+                }
+                .product-sign{
+                    position: absolute;
+                    top: -240px;
+                    left: 30px;
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    color: #fff;
+                    font-size: 16px;
+                    text-align: center;
+                    border-radius: 50%;
+                    background-image: linear-gradient(120deg,#ff3149,#ff64a6);
+                }
+                s{
+                    font-size: 14px;
+                    margin-left: 8px;
+                    color: #666;
+                }
+            }
+            .box-ad-info{
+                top: 267px;
+                .goods-name{
+                    color: #fff;
+                    font-size: 21px;
+                    font-weight: 700;
+                    margin-bottom: 0;
+                }
+                .goods-desc{
+                    color: #fff;
+                }
+                .goods-price{
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+                s{
+                    margin-left: 4px;
+                    color: #fff;
+                    font-size: 14px;
+                }
+            }
+             
+        }
+        .phone1{
+            height: 388px;
+            a{
+                text-decoration: none;
+                color: #515151;
+            }
+            .goods-img4{
+                height: 190px;
+            }
+            .comment-user-info{
+                overflow: hidden;
+                height: 42px;
+                line-height: 42px;
+                margin-top: 10px;
+                padding: 0 15px;
+                img{
+                    width: 36px;
+                    height: 36px;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    float: left;
+                    box-shadow: 1px 1px 1px 1px #eee
+                }
+                .comment-username{
+                    margin-left: 15px;
+                    text-align: left;
+                    float: left;
+                }
+            }
+            p{
+                padding: 10px 15px 15px;
+                font-size: 16px;
+                line-height: 27px;
+                text-align: left;
+                height: 66px;
+            }
+            .comment-tip{
+                color: #999;
+                padding: 0 15px;
+                margin-top: 10px;
+                text-align: left;
+            }
+        }
+        .clearfix{
+            .phone2{
+                margin-top: 0;
+                height: 245px;
+                margin-bottom: 15px;
+                a{
+                    text-decoration: none;
+                    color: #515151;
+                }
+                .goods-img5{
+                    height: 245px;
+                }
+                .goods-img6{
+                    height: 190px;
+                    width: 100%;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 55px
+                }
+                i{
+                    background: url(../img/下载.png) no-repeat;
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    right: 15px;
+                    bottom: 70px;
+                    background-size: 100%;
+                }
+            }
+            li:first-child{
+                width: 615px;
+            }
         }
     }
 }

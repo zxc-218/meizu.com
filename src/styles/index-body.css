@@ -19,6 +19,7 @@ main .main-phone-adv a {
   height: 100%;
   transition: opacity 0.2s linear;
   overflow: hidden;
+  text-decoration: none;
 }
 main .main-phone-adv a:hover {
   opacity: 0.8;
@@ -33,10 +34,14 @@ main .main-phone-adv a img {
 }
 main .phone-list {
   overflow: hidden;
+  margin-bottom: 50px;
 }
 main .phone-list .big {
   width: 615px;
   height: 610px;
+}
+main .phone-list .big .phone-info {
+  top: 58px;
 }
 main .phone-list li {
   width: 303px;
@@ -57,7 +62,7 @@ main .phone-list li a {
   text-align: center;
   position: relative;
 }
-main .phone-list li a img {
+main .phone-list li a .goods-img1 {
   height: 460px;
   position: absolute;
   bottom: 0;
@@ -69,17 +74,18 @@ main .phone-list li a span {
 main .phone-list li a .phone-info {
   position: absolute;
   left: 0;
-  top: 58px;
+  top: 270px;
   text-align: center;
   width: 100%;
 }
-main .phone-list li a .phone-info span:nth-child(1) {
-  font-size: 28px;
-  color: #333333;
+main .phone-list li a .phone-info .goods-name {
+  font-size: 28px ;
+  color: #333;
+  margin-bottom: 0;
 }
-main .phone-list li a .phone-info span:nth-child(2) {
+main .phone-list li a .phone-info .goods-desc {
   font-size: 18px;
-  color: #333333;
+  color: #333;
   margin-bottom: 3px;
 }
 main .phone-list li a .phone-info span:nth-child(3) {
@@ -104,6 +110,142 @@ main .phone-list li a .phone-red {
   border-radius: 50%;
   background-image: linear-gradient(120deg, #ff3149, #ff64a6);
 }
+main .phone-list li .goods-img2 {
+  height: 230px;
+  margin-top: 30px;
+}
+main .phone-list li .goods-img3 {
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+}
 main .phone-list .big2 {
   margin-right: 0;
+}
+main .phone-list .last {
+  margin-right: 0;
+}
+main .phone-list .phone .phone-info .goods-name {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+main .phone-list .phone .phone-info .goods-desc {
+  color: #999;
+  font-size: 14px;
+}
+main .phone-list .phone .phone-info .product-sign {
+  position: absolute;
+  top: -240px;
+  left: 30px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 50%;
+  background-image: linear-gradient(120deg, #ff3149, #ff64a6);
+}
+main .phone-list .phone .phone-info s {
+  font-size: 14px;
+  margin-left: 8px;
+  color: #666;
+}
+main .phone-list .phone .box-ad-info {
+  top: 267px;
+}
+main .phone-list .phone .box-ad-info .goods-name {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+main .phone-list .phone .box-ad-info .goods-desc {
+  color: #fff;
+}
+main .phone-list .phone .box-ad-info .goods-price {
+  font-size: 24px;
+  font-weight: 700;
+}
+main .phone-list .phone .box-ad-info s {
+  margin-left: 4px;
+  color: #fff;
+  font-size: 14px;
+}
+main .phone-list .phone1 {
+  height: 388px;
+}
+main .phone-list .phone1 a {
+  text-decoration: none;
+  color: #515151;
+}
+main .phone-list .phone1 .goods-img4 {
+  height: 190px;
+}
+main .phone-list .phone1 .comment-user-info {
+  overflow: hidden;
+  height: 42px;
+  line-height: 42px;
+  margin-top: 10px;
+  padding: 0 15px;
+}
+main .phone-list .phone1 .comment-user-info img {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  float: left;
+  box-shadow: 1px 1px 1px 1px #eee;
+}
+main .phone-list .phone1 .comment-user-info .comment-username {
+  margin-left: 15px;
+  text-align: left;
+  float: left;
+}
+main .phone-list .phone1 p {
+  padding: 10px 15px 15px;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: left;
+  height: 66px;
+}
+main .phone-list .phone1 .comment-tip {
+  color: #999;
+  padding: 0 15px;
+  margin-top: 10px;
+  text-align: left;
+}
+main .phone-list .clearfix .phone2 {
+  margin-top: 0;
+  height: 245px;
+  margin-bottom: 15px;
+}
+main .phone-list .clearfix .phone2 a {
+  text-decoration: none;
+  color: #515151;
+}
+main .phone-list .clearfix .phone2 .goods-img5 {
+  height: 245px;
+}
+main .phone-list .clearfix .phone2 .goods-img6 {
+  height: 190px;
+  width: 100%;
+}
+main .phone-list .clearfix .phone2 p {
+  font-size: 16px;
+  line-height: 55px;
+}
+main .phone-list .clearfix .phone2 i {
+  background: url(../img/下载.png) no-repeat;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 15px;
+  bottom: 70px;
+  background-size: 100%;
+}
+main .phone-list .clearfix li:first-child {
+  width: 615px;
 }
