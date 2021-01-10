@@ -11,6 +11,7 @@ main .main-phone-title h3 {
 }
 main .main-phone-adv {
   height: 450px;
+  overflow: hidden;
 }
 main .main-phone-adv a {
   position: relative;
@@ -34,7 +35,7 @@ main .main-phone-adv a img {
 }
 main .phone-list {
   overflow: hidden;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 main .phone-list .big {
   width: 615px;
@@ -44,6 +45,7 @@ main .phone-list .big .phone-info {
   top: 58px;
 }
 main .phone-list li {
+  overflow: hidden;
   width: 303px;
   height: 375px;
   float: left;

@@ -11,7 +11,12 @@ li{
     list-style-type: none;
 }
 a{
-    text-decoration: none;
+    text-decoration: none!important;
+}
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
 }
 .wrapper{
     width: 1240px;
@@ -87,13 +92,24 @@ a{
             background:#fff;
             text-align: center;
             font-size: 12px;
-            padding: 7px 0;
+            padding-top: 7px;
             border-radius: 2px;
             display: none;
             position: absolute;
             top: 65px;
             left: -28px;
             box-shadow: 0 0 5px rgba(0,0,0,.1);
+            &::after{
+                display: block;
+                content: "";
+                width: 0;
+                height: 0;
+                border: 10px solid;
+                border-color:             transparent transparent #fff;
+                left: 40px;
+                top: -15px;
+                position: absolute;
+            }
             li{
                 height: 33px;
                 line-height: 33px;
