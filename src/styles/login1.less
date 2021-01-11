@@ -1,0 +1,472 @@
+@charset 'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+em{
+    font-style: normal;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none!important;
+    color: #515151;
+}
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.content{
+    width: 100%;
+    position: relative;
+    .header-wrapper{
+        width: 1200px;
+        margin: 0 auto;
+        height: auto;
+        padding-top: 28px;
+        padding-bottom: 40px;
+        .logo{
+            float: left;
+            height: 20px;
+            width: 110px;
+            overflow: hidden;
+            display: block;
+            i{
+                background: url(../img/base.png) -2px -4px no-repeat;
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }   
+    }
+    .banner-box{
+        height: 750px;
+        position: relative;
+        background: linear-gradient(180deg, #edfcfd 0%, #faffff 100%);
+        &::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            content: '';
+            background: url(../img/pic-flyme.png) no-repeat;
+            background-position: 50% 50%;
+        }
+        .bg-box{
+            position: relative;
+            width: 1240px;
+            height: 750px;
+            margin: 0 auto;
+            .main-form{
+                position: absolute;
+                top: 24%;
+                right: 85px;
+                background-color: #FFF;
+                padding: 35px 35px 10px;
+                border-radius: 2px;
+                box-shadow: 0 6px 12px 0 rgba(138,153,150,0.15);
+            }
+            .tab-title{
+                font-size: 18px;
+                margin-top: 35px;
+                width: 300px;
+                text-align: center;
+            }
+            .tip-box{
+                visibility: hidden;
+                position: relative;
+                height: 33px;
+                display: table;
+                width: 100%;
+                margin-bottom: 4px;
+                margin-top: 4px;
+                border: solid 1px #ffc2b3;
+                background: #ffd1ca;
+                border-radius: 2px;
+                .err-icon{
+                    background: url(../img/error-ico.png);
+                    width: 16px;
+                    height: 16px;
+                    display: inline-block;
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                }
+                .tip-font{
+                    color: #666;
+                    font-size: 12px;
+                    padding-right: 25px;
+                    padding-left: 35px;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+                .close-icon{
+                    background: url(../img/close-ico.png) no-repeat;
+                    cursor: pointer;
+                    width: 16px;
+                    height: 16px;
+                    display: inline-block;
+                    position: absolute;
+                    top: 12px;
+                    right: 10px;
+                }
+            } 
+        }
+        .normalInput{
+            width: 100%;
+            position: relative;
+            padding: 0px 10px;
+            height: 46px;
+            line-height: 22px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            border: 1px solid #dadada;
+            outline: none;
+            color: #474747;
+            border-radius: 2px;
+            .phone-text{
+                padding-top: 10px;
+                input{
+                    vertical-align: middle;
+                    font-size: 14px;
+                    margin-bottom: 0;
+                    line-height: 22px;
+                    height: 18px;
+                    outline: none;
+                    border: 0;
+                }
+                .code-phone{
+                    display: inline-block;
+                    width: 60px;
+                    border-right: 1px solid #DDD;
+                    cursor: pointer;
+                    .ipt-cycode{
+                        width: 60%;
+                        color: grey;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                    i{
+                        display: inline-block;
+                        width: 14px;
+                        height: 8px;
+                        background: url(../img/arrow-down.png) no-repeat center;
+                    }
+                }
+                .ipt-phone{
+                    width: 74%;
+                    text-indent: 8px;
+                }
+            }
+            .cycode-container{
+                display: none;
+                width: 100%;
+                height: 210px;
+                line-height: 30px;
+                background: #FFF;
+                border: 1px solid #E8E8E8;
+                overflow-x: hidden;
+                overflow-y: auto;
+                position: absolute;
+                left: -1px;
+                top: 50px;
+                z-index: 500;
+                color: #000;
+                .head{
+                    background: #F9F9F9;
+                    padding-left: 10px;
+                }
+                li{
+                    padding: 0 10px;
+                    cursor: pointer;
+                    overflow: hidden;
+                    &:hover{
+                        background: #F9F9F9;
+                    }
+                    .record-country{
+                        height: 30px;
+                        float: left;
+                        cursor: pointer;
+                    }
+                    .record-code{
+                        float: right;
+                        height: 30px;
+                    }
+                }
+            }
+        }    
+        .geetest-holder{
+                height: 44px;
+                width: 276px;
+                position: relative;
+                display: none;
+                .geetest-btn{
+                    position: absolute;
+                    top: 0;
+                    border: 1px solid #ccc;
+                    border-radius: 2px;
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                    opacity: 1;
+                    left: 0;
+                    background-image: linear-gradient(180deg, #ffffff 0%,#f3f3f3 100%);
+                    .geetest-radar{
+                        position: absolute;
+                        margin: 6px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                    .geetest-radar-tip{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        box-sizing: border-box;
+                        padding: 0 46px 0 46px;
+                        height: 42px;
+                        width: 100%;
+                        line-height: 42px;
+                        font-size: 14px;
+                        color: #666;
+                        white-space: nowrap;
+                        text-align: left;
+                        .geetest-radar-tip-content{
+                            line-height: 42px;
+                            font-size: 14px;
+                            white-space: nowrap;
+                            text-align: left;
+                        }
+                        .geetest-reset-tip-content{
+                            margin-left: 5px;
+                            color: #005aff;
+                            cursor: pointer;
+                            display: none;
+                            line-height: 42px;
+                            font-size: 14px;
+                            white-space: nowrap;
+                            text-align: left;
+                        }
+                    }
+                    .geetest-logo{
+                        background: url(../img/sprite.1.5.8.png) no-repeat;
+                        position: absolute;
+                        left: 242px;
+                        width: 20px;
+                        height: 20px;
+                        top: 11px;
+                        background-size: 290%;
+                        background-position: 0 41.33858%;
+                    }
+                }
+        }
+        .fullBtnBlue{
+            display: block;
+            width: 300px;
+            background: #387aff;
+            height: 46px;
+            font-size: 14px;
+            line-height: 46px;
+            text-align: center;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            color: #fff;
+            margin-top: 34px;
+        }
+        .transferField{
+            margin-bottom: 5px;
+            .forgetpsw{
+                float: right;
+            }
+            a:visited{
+                color: #387aff;
+            }
+            a:hover{
+                color: #3058df;
+            }
+        }
+        .qr-btn{
+            position: absolute;
+            background: url(../img/pc.png) no-repeat center;
+            top: 10px;
+            right: 10px;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+        }
+    }
+}
+.flyme-footer{
+    width: 100%;
+    height: 130px;
+    border-top: solid 1px #E5E6E7;
+    color: black;
+    border-color: transparent;
+    .footter-wrapper{
+        width: 1000px;
+        margin: 24px auto 30px;
+        .footer-layer{
+            height: 50px;
+            line-height: 50px;
+            .footer-innerLink{
+                float: left;
+                a{
+                    font-size: 14px;
+                    color: black;
+                }
+                span{
+                    margin: 0px 4px;
+                    font-size: 14px;
+                }
+                .footer-language{
+                    display: inline;
+                    position: relative;
+                    background: url(../img/base.png) -80px -150px no-repeat;
+                    overflow: hidden;
+                    cursor: default;
+                    font-size: 14px;
+                    color: black;
+                    &:hover .footer-language-menu{
+                        display: block;
+                    }
+                    .footer-language-menu{
+                        border-radius: 2px;
+                        background-color: #FEFEFE;
+                        position: absolute;
+                        border: solid 1px #E1E4E8;
+                        overflow: hidden;
+                        left: -8px;
+                        bottom: 16px;
+                        display: none;
+                        width: 77px;
+                        height: 80px;
+                        .checked{
+                            color: #1daeed;
+                        }
+                        .eng{
+                            color: #000000;
+                            &:hover{
+                                color: #515151;
+                            }
+                        }
+                    }
+                    a{
+                        display: block;
+                        height: 40px;
+                        line-height: 40px;
+                        width: 118px;
+                        margin: 0px auto;
+                        text-decoration: none;
+                        border-bottom: solid 1px #E4E7E9;
+                        font-size: 14px;
+                        color: #000000;
+                        text-align: left;
+                        padding-left: 10px;
+                        outline: none
+                    }
+                }
+            }
+            .footer-service{
+                font-size: 14px;
+                color: black;
+                float: left;
+                margin-left: 36px;
+                .service-label{
+                    margin-right: 10px;
+                }
+                .service-num{
+                    margin-right: 20px;
+                }
+                .service-online{
+                    display: inline-block;
+                    height: 20px;
+                    line-height: 18px;
+                    width: 64px;
+                    color: white;
+                    background-color: #32a5e7;
+                    border-radius: 2px;
+                    text-align: center;
+                }
+            }
+            .footer-outerLink{
+                position: relative;
+                float: right;
+                padding-top: 9px;
+                a{
+                    margin-left: 10px;
+                    display: inline-block;
+                    overflow: hidden;
+                    width: 32px;
+                    height: 32px;
+                }
+                .footer-sinaMblog i{
+                    background-position: -218px -91px;
+                }
+                .footer-sinaMblog:hover i{
+                    background-position: -218px -137px;
+                }
+                .footer-weChat i{
+                    background-position: -302px -91px;
+                }
+                .footer-weChat:hover i{
+                    background-position:-302px -137px;
+                }
+                .footer-weChat:hover .wechatPic{
+                    display: block;
+                } 
+                .footer-qzone i{
+                    background-position: -344px -91px;
+                }
+                .footer-qzone:hover i{
+                    background-position: -344px -137px;
+                }
+                i{
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    background: url(../img/base.png) no-repeat;
+                }
+                .wechatPic{
+                    background: url(../img/weixin.png) no-repeat;
+                    width: 310px;
+                    height: 270px;
+                    position: absolute;
+                    top: -260px;
+                    right: -92px;
+                    display: none;
+                }                
+            }
+        }
+        .flymeCopyright{
+            width: 100%;
+            .copyrightInner{
+                width: 1000px;
+                margin: 0px auto;
+                span{
+                    color: #7f7f7f;
+                    float: left;
+                    font-size: 12px;
+                }
+                a{
+                    white-space: nowrap;
+                    float: left;
+                    color: #7f7f7f;
+                    margin-left: 6px;
+                    font-size: 12px;
+                }
+                .pic{
+                    background: url(../img/下载\ \(3\).png) no-repeat;
+                    background-size: 15px 14px;
+                    padding-left: 18px;
+                    background-position-y: center;
+                }
+            }
+        }
+    }
+}
