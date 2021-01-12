@@ -1,0 +1,402 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+em {
+  font-style: normal;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none!important;
+}
+.clear::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.wrapper {
+  width: 1240px;
+  margin: 0 auto;
+}
+.meizu-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+.meizu-header .meizu-header-logo {
+  float: left;
+  padding: 28px 0;
+}
+.meizu-header .meizu-header-logo img {
+  display: block;
+  width: 125px;
+  height: 24px;
+}
+.meizu-header .meizu-header-link {
+  margin-left: 20px;
+  float: left;
+}
+.meizu-header .meizu-header-link .meizu-header-product {
+  float: left;
+}
+.meizu-header .meizu-header-link a {
+  display: block;
+  font-size: 14px;
+  padding: 30px 20px 30px;
+  color: #515151;
+}
+.meizu-header .meizu-header-link a:hover {
+  color: #008cff;
+  text-decoration: none;
+}
+.meizu-header .shop-cart {
+  float: right;
+  position: relative;
+}
+.meizu-header .shop-cart img {
+  width: 29px;
+  height: 29px;
+  margin: 24px 0 0 8px;
+}
+.meizu-header .shop-cart em {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #c00;
+  text-align: center;
+  line-height: 15px;
+  color: #fff;
+  font-size: 12px;
+  right: -3px;
+  top: 22px;
+}
+.meizu-header .user {
+  float: right;
+  position: relative;
+  cursor: pointer;
+}
+.meizu-header .user:hover .user-list {
+  display: block;
+}
+.meizu-header .user img {
+  width: 29px;
+  height: 29px;
+  margin: 25px 0 0 8px;
+}
+.meizu-header .user .user-list {
+  width: 100px;
+  background: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 7px;
+  border-radius: 2px;
+  display: none;
+  position: absolute;
+  top: 65px;
+  left: -28px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.meizu-header .user .user-list::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-color: transparent transparent #fff;
+  left: 40px;
+  top: -15px;
+  position: absolute;
+}
+.meizu-header .user .user-list li {
+  height: 33px;
+  line-height: 33px;
+}
+.meizu-header .user .user-list li a {
+  color: #515151;
+}
+.meizu-header .user .user-list li a:hover {
+  color: #008cff;
+}
+.meizu-header .header-search {
+  position: relative;
+  float: right;
+  width: 170px;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid #999;
+  margin: 26px 5px 0 10px;
+  background: #fff;
+}
+.meizu-header .header-search input {
+  width: 127px;
+  height: 20px;
+  border: 0;
+  margin: 5px 0 0 15px;
+  outline: 0;
+  font-size: 12px;
+}
+.meizu-header .header-search svg {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+.carousel-inner a {
+  display: block;
+  height: 680px;
+  width: 2560px;
+  transform: translateX(-20%);
+}
+.section-box {
+  background: #f4f4f4;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+.section-box .section-box-adv {
+  padding-bottom: 45px;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+.section-box .section-box-adv li {
+  float: left;
+  width: 25%;
+  padding-top: 45px;
+}
+.section-box .section-box-adv li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+.section-box .section-box-adv li a img {
+  height: 130px;
+}
+.section-box .section-box-adv li a em {
+  display: block;
+  font-size: 20px;
+  color: #333;
+}
+.section-box .section-box-adv li a p {
+  color: #999;
+}
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+.page-detail {
+  position: relative;
+  padding-top: 66px;
+  line-height: 1.5;
+  color: #333;
+}
+.page-detail .fast-nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #f6f8fb;
+}
+.page-detail .fast-nav .-container {
+  position: relative;
+  width: 1240px;
+  height: 70px;
+  margin: 0 auto;
+}
+.page-detail .fast-nav .-name {
+  margin-top: 15px;
+  float: left;
+  font-size: 26px;
+}
+.page-detail .fast-nav .-products-small {
+  float: left;
+  margin-top: 25px;
+  margin-left: 10px;
+  overflow: hidden;
+}
+.page-detail .fast-nav .-products-small li {
+  float: left;
+  border-right: 1px solid #dedede;
+}
+.page-detail .fast-nav .-products-small li a {
+  display: block;
+  padding: 0 10px;
+  color: #333;
+  line-height: 20px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.page-detail .fast-nav .-products-small li:last-child {
+  border: 0;
+}
+.page-detail section {
+  position: relative;
+}
+.page-detail .preview {
+  float: left;
+  width: 580px;
+  height: 660px;
+  border: 1px solid red;
+}
+.page-detail .property {
+  position: relative;
+  float: right;
+  width: 568px;
+  font-size: 14px;
+  padding-top: 25px;
+}
+.page-detail .property .property-hd {
+  position: relative;
+  padding-top: 30px;
+  margin-bottom: 24px;
+}
+.page-detail .property .property-hd h1 {
+  margin-bottom: 14px;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #333;
+}
+.page-detail .property .property-hd .mod-info {
+  font-size: 16px;
+  color: #333;
+  line-height: 26px;
+}
+.page-detail .property .property-sell {
+  position: relative;
+  padding: 0;
+}
+.page-detail .property .property-sell .property-sell-price {
+  overflow: hidden;
+  border-bottom: 1px solid #d6d6d630;
+  padding-bottom: 10px;
+}
+.page-detail .property .property-sell .property-sell-price .mod-price {
+  margin-right: 18px;
+  color: #E03D3D;
+  float: left;
+}
+.page-detail .property .property-sell .property-sell-price .mod-price small {
+  font-size: 24px;
+}
+.page-detail .property .property-sell .property-sell-price .mod-price .vm-money {
+  color: #E03D3D;
+  line-height: 46px;
+  font-size: 36px;
+  font-weight: 400;
+}
+.page-detail .property .property-sell .property-sell-price .mod-huabei {
+  float: left;
+  color: #E03D3D;
+  font-size: 16px;
+  line-height: 60px;
+}
+.page-detail .property .property-sell .property-sell-price .mod-huabei em {
+  font-size: 12px;
+  margin-right: 2px;
+}
+.page-detail .property .property-sell .property-sell-list {
+  padding-top: 8px;
+  padding-bottom: 26px;
+  border-top: 1px solid #d6d6d630;
+}
+.page-detail .property .property-service .vm-metatit {
+  font-size: 16px;
+  line-height: 44px;
+  color: #333;
+}
+.page-detail .property .property-service .site-selector {
+  position: relative;
+  padding: 20px 30px;
+  text-align: center;
+  border: 1px solid #d6d6d6;
+}
+.page-detail .property .property-service .site-selector .text {
+  font-size: 16px;
+}
+.page-detail .property .property-set-sale {
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+.page-detail .property .property-set-sale dd {
+  display: flex;
+  justify-content: space-between;
+}
+.property-set a,
+.property-huabei-bd a {
+  position: relative;
+  width: 49.2%;
+  height: 56px;
+  margin: 0 0 16px;
+  background-color: #fff;
+  white-space: nowrap;
+  line-height: 56px;
+  border: 1px solid #d6d6d6;
+  border-radius: 2px;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.property-set a img,
+.property-huabei-bd a img {
+  width: 18px;
+  height: 18px;
+  margin-right: 13px;
+}
+.property-set a span,
+.property-huabei-bd a span {
+  line-height: 56px;
+}
+.property-huabei {
+  position: relative;
+  margin-top: 20px;
+}
+.property-huabei .property-huabei-bd {
+  display: flex;
+  overflow: hidden;
+}
+.property-huabei .property-huabei-bd a {
+  padding: 26px 0;
+  height: auto;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-bottom: 0;
+}
+.property-huabei .property-huabei-bd .vm-periods {
+  display: block;
+  line-height: 18px;
+  font-size: 16px;
+  color: #333;
+}
+.property-huabei .property-huabei-bd .vm-rate {
+  color: #8c8c8c;
+  font-size: 14px;
+  padding-top: 3px;
+  font-weight: 400;
+  display: block;
+  line-height: 18px;
+}
+.property-huabei .property-huabei-bd .vm-rate em {
+  font-size: 10px;
+}
+.property-control {
+  margin-top: 16px;
+}
+.property-control .mod-control {
+  width: 178px;
+  line-height: 52px;
+  flex-wrap: wrap;
+  font-size: 18px;
+  border: 1px solid #D6D6D6;
+  display: flex;
+}

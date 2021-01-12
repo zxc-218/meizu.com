@@ -1,4 +1,5 @@
 @charset 'utf-8';
+@charset 'utf-8';
 *{
     margin: 0;
     padding: 0;
@@ -63,19 +64,24 @@ a{
             height: 750px;
             margin: 0 auto;
             .main-form{
+                width: 368px;
                 position: absolute;
-                top: 24%;
+                top: 16%;
                 right: 85px;
                 background-color: #FFF;
-                padding: 35px 35px 10px;
+                padding: 72px 35px 20px;
                 border-radius: 2px;
                 box-shadow: 0 6px 12px 0 rgba(138,153,150,0.15);
             }
             .tab-title{
                 font-size: 18px;
-                margin-top: 35px;
-                width: 300px;
                 text-align: center;
+                a{
+                    color: #387aff;
+                    &:hover{
+                        color: #3058df;
+                    }
+                }
             }
             .tip-box{
                 visibility: hidden;
@@ -83,8 +89,8 @@ a{
                 height: 33px;
                 display: table;
                 width: 100%;
-                margin-bottom: 4px;
-                margin-top: 4px;
+                margin-bottom: 0;
+                margin-top: 26px;
                 border: solid 1px #ffc2b3;
                 background: #ffd1ca;
                 border-radius: 2px;
@@ -115,6 +121,13 @@ a{
                     top: 12px;
                     right: 10px;
                 }
+            }
+            .tip-text{
+                visibility: hidden;
+                height: 33px;
+                padding: 5px 0px;
+                color: #666;
+                font-size: 12px;
             } 
         }
         .normalInput{
@@ -199,12 +212,47 @@ a{
                     }
                 }
             }
+        }
+        .normalInput{
+            .inp-focus{
+                line-height: 22px;
+                padding: 22px 0;
+                height: 22px;
+                width: 200px;
+                border: none;
+                outline: none;
+                font-size: 14px;
+            }
+            .form-line{
+                color: #d9d9d9;
+                height: 40px;
+                display: inline-block;
+                border-left: 1px solid #dadada;
+                position: absolute;
+                right: 140px;
+                top: 5px;
+            }
+            #getKey{
+                width: 120px;
+                text-align: center;
+                border: none;
+                outline: none;
+                height: 50px;
+                line-height: 50px;
+                font-size: 14px;
+                position: absolute;
+                right: 15px;
+                top: -3px;
+                color: #7f7f7f;
+                cursor: default;
+            }
+            #pasword,#pasword1{
+                float: left;
+            }
         }    
         .geetest-holder{
                 height: 44px;
-                width: 276px;
                 position: relative;
-                display: none;
                 .geetest-btn{
                     position: absolute;
                     top: 0;
@@ -264,6 +312,22 @@ a{
                     }
                 }
         }
+        .rememberField{
+            margin-bottom: 30px;
+            height: 20px;
+            line-height: 20px;
+            margin-top: 30px;
+            font-size: 12px;
+            .pointer{
+                cursor: pointer;
+            }
+            a{
+                color: #387aff;
+                &:hover{
+                    color: #3058df;
+                }
+            }
+        }
         .fullBtnBlue{
             display: block;
             width: 300px;
@@ -273,7 +337,6 @@ a{
             line-height: 46px;
             text-align: center;
             margin-bottom: 10px;
-            border-radius: 4px;
             cursor: pointer;
             color: #fff;
             margin-top: 34px;
@@ -282,25 +345,13 @@ a{
             }
         }
         .transferField{
-            margin-bottom: 5px;
-            .forgetpsw{
-                float: right;
-            }
+            margin-bottom: 5px;       
             a:visited{
                 color: #387aff;
             }
             a:hover{
                 color: #3058df;
             }
-        }
-        .qr-btn{
-            position: absolute;
-            background: url(../img/pc.png) no-repeat center;
-            top: 10px;
-            right: 10px;
-            width: 35px;
-            height: 35px;
-            cursor: pointer;
         }
     }
 }
@@ -347,10 +398,7 @@ a{
                         bottom: 16px;
                         display: none;
                         width: 77px;
-                        height: 80px;
-                        .checked{
-                            color: #1daeed;
-                        }
+                        height: 40px;
                         .eng{
                             color: #000000;
                             &:hover{
@@ -462,15 +510,6 @@ a{
                     font-size: 12px;
                     &:hover{
                         color: #2b2b2b;
-                    }
-                }
-                .pic{
-                    background: url(../img/下载\ \(3\).png) no-repeat;
-                    background-size: 15px 17px;
-                    padding-left: 18px;
-                    background-position-y: center;
-                    &:visited{
-                        color: #7f7f7f;
                     }
                 }
             }
