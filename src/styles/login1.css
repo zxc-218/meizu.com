@@ -278,6 +278,7 @@ a {
   cursor: pointer;
   color: #fff;
   margin-top: 34px;
+  border: 0;
 }
 .content .banner-box .fullBtnBlue:hover {
   background: #3058df;

@@ -22,6 +22,86 @@ a {
   width: 1240px;
   margin: 0 auto;
 }
+.meizu-header-sub-warp {
+  z-index: 1000;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 82px;
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.4s;
+}
+.meizu-header-sub-warp .meizu-header-sub {
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden;
+}
+.meizu-header-sub-warp .meizu-header-sub ul {
+  overflow: hidden;
+  padding: 5px 0 20px;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 12px;
+}
+.meizu-header-sub-warp .meizu-header-sub ul li {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  padding: 5px 5px 20px;
+  width: 142px;
+  height: 140px;
+  font-size: 12px;
+  color: #333;
+  opacity: 0.7;
+}
+.meizu-header-sub-warp .meizu-header-sub ul li a {
+  font-size: 12px;
+  width: 142px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
+}
+.meizu-header-sub-warp .meizu-header-sub ul li a:visited {
+  color: #333;
+}
+.meizu-header-sub-warp .meizu-header-sub ul li a i {
+  background: url(../img/13.jpg) no-repeat;
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  background-position: bottom;
+  background-size: 120px;
+}
+.meizu-header-sub-warp .meizu-header-sub ul li a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  opacity: 0.01;
+  background-color: #fff;
+}
+.meizu-header-sub-warp .meizu-header-sub ul li a em {
+  display: block;
+  color: #333;
+}
+.meizu-header-sub-warp .meizu-header-sub ul li:hover {
+  opacity: 1;
+}
+.meizu-header-product:hover .meizu-header-sub-warp {
+  height: 183px;
+}
 .meizu-header {
   position: absolute;
   top: 0;
@@ -58,6 +138,9 @@ a {
   float: right;
   position: relative;
 }
+.meizu-header .shop-cart:hover .cart-hidden {
+  display: block;
+}
 .meizu-header .shop-cart img {
   width: 29px;
   height: 29px;
@@ -75,6 +158,34 @@ a {
   font-size: 12px;
   right: -3px;
   top: 22px;
+}
+.meizu-header .shop-cart .cart-hidden {
+  color: #515151;
+  width: 300px;
+  height: 140px;
+  text-align: center;
+  background: #fff;
+  font-size: 12px;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 65px;
+  right: 0;
+  display: none;
+}
+.meizu-header .shop-cart .cart-hidden::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-color: transparent transparent #fff;
+  right: 2px;
+  top: -15px;
+  position: absolute;
+}
+.meizu-header .shop-cart .cart-hidden .login {
+  padding-top: 50px;
 }
 .meizu-header .user {
   float: right;
@@ -150,7 +261,13 @@ a {
   display: block;
   height: 680px;
   width: 2560px;
-  transform: translateX(-20%);
+}
+.carousel-inner a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 2560px!important;
 }
 .section-box {
   background: #f4f4f4;
@@ -309,10 +426,34 @@ main .phone-list li .goods-img3 {
   width: 100%;
   height: 100%;
 }
-main .phone-list .big2 {
-  margin-right: 0;
+main .phone-list .list li:first-child img {
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline;
+}
+main .phone-list .list li:first-child span {
+  color: #fff !important;
+}
+main .phone-list .list li:nth-child(5) img {
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline;
+}
+main .phone-list .list li:nth-child(5) span {
+  color: #fff !important;
+}
+main .phone-list li:nth-child(4) {
+  margin-right: 0!important;
+}
+main .phone-list li:nth-child(8) {
+  margin-right: 0!important;
 }
 main .phone-list .last {
+  margin-right: 0;
+}
+main .phone-list .big2 {
   margin-right: 0;
 }
 main .phone-list .phone .phone-info .goods-name {

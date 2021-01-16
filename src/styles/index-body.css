@@ -121,10 +121,34 @@ main .phone-list li .goods-img3 {
   width: 100%;
   height: 100%;
 }
-main .phone-list .big2 {
-  margin-right: 0;
+main .phone-list .list li:first-child img {
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline;
+}
+main .phone-list .list li:first-child span {
+  color: #fff !important;
+}
+main .phone-list .list li:nth-child(5) img {
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline;
+}
+main .phone-list .list li:nth-child(5) span {
+  color: #fff !important;
+}
+main .phone-list li:nth-child(4) {
+  margin-right: 0!important;
+}
+main .phone-list li:nth-child(8) {
+  margin-right: 0!important;
 }
 main .phone-list .last {
+  margin-right: 0;
+}
+main .phone-list .big2 {
   margin-right: 0;
 }
 main .phone-list .phone .phone-info .goods-name {

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles/login1.css">
+    <link rel="stylesheet" href="../styles/login2.css">
 </head>
 
 <body>
@@ -17,9 +17,11 @@
         </div>
         <div class="banner-box">
             <div class="bg-box">
-                <form action="../../interface/login1.php" class="main-form" method="POST">
+                <form action="../../interface/login2.php" class="main-form" method="POST">
                     <div class="tab-title">
-                        <h3>验证码登录</h3>
+                        <a href="">账号登录</a>
+                        <span></span>
+                        <a href="">二维码登录</a>
                     </div>
                     <div class="tip-box">
                         <i class="err-icon"></i>
@@ -28,53 +30,13 @@
                     </div>
                     <div class="normalInput">
                         <div class="phone-text">
-                            <span class="code-phone">
-                             <input value="+86" class="ipt-cycode">
-                             <i></i>
-                            </span>
-                            <input type="text" name="phone" id="phone" placeholder="手机号码" maxlength="20" class="ipt-phone">
-
-                        </div>
-                        <div class="cycode-container">
-                            <div class="country-code">
-                                <div class="container">
-                                    <div class="head">常用</div>
-                                    <ul>
-                                        <li>
-                                            <span class="record-country">中国</span>
-                                            <span class="record-code">+86</span>
-                                        </li>
-                                        <li>
-                                            <span class="record-country">中国台湾</span>
-                                            <span class="record-code">+886</span>
-                                        </li>
-                                        <li>
-                                            <span class="record-country">中国香港</span>
-                                            <span class="record-code">+852</span>
-                                        </li>
-                                        <li>
-                                            <span class="record-country">Brazil</span>
-                                            <span class="record-code">+55</span>
-                                        </li>
-                                        <li>
-                                            <span class="record-country">India</span>
-                                            <span class="record-code">+91</span>
-                                        </li>
-                                        <li>
-                                            <span class="record-country">Indonesia</span>
-                                            <span class="record-code">+62</span>
-                                        </li>
-                                        <li>
-                                            <span class="record-country">Malaysia</span>
-                                            <span class="record-code">+60</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <input type="text" name="phone" id="phone" placeholder="手机号码 / Flyme账号" maxlength="20" class="ipt-phone">
                         </div>
                     </div>
-                    <div class="geeDiv">
-                        <p style="display: none;">正在加载验证码......</p>
+                    <div class="normalInput">
+                        <div class="phone-text">
+                            <input type="password" name="password" id="phone" placeholder="密码" maxlength="20" class="ipt-phone">
+                        </div>
                     </div>
                     <div class="geetest-holder">
                         <div class="geetest-btn">
@@ -86,12 +48,16 @@
                             <a class="geetest-logo" href=""></a>
                         </div>
                     </div>
+                    <div class="rememberField">
+                        <input type="checkbox">
+                        <span>记住登录状态</span>
+                    </div>
                     <input type="submit" class="fullBtnBlue" value="登录">
                     <div class="transferField">
                         <a class="forgetpsw" href="">忘记密码？</a>
                         <a class="register" href="../html/register.html">注册</a>
                     </div>
-                    <a class="qr-btn" href="../html/login2.html"></a>
+                    <a class="qr-btn" href="../html/login1.html"></a>
                 </form>
             </div>
         </div>

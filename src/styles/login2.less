@@ -1,4 +1,5 @@
 @charset 'utf-8';
+@charset 'utf-8';
 *{
     margin: 0;
     padding: 0;
@@ -76,6 +77,16 @@ a{
                 margin-top: 35px;
                 width: 300px;
                 text-align: center;
+                span{
+                    color: #B3ABAB;
+                    display: inline-block;
+                    border: 2px solid #B3ABAB;
+                    border-left: 1px;
+                    height: 10px;
+                    line-height: 20px;
+                    margin-right: 32px;
+                    margin-left: 32px;
+                }
             }
             .tip-box{
                 visibility: hidden;
@@ -120,7 +131,6 @@ a{
         .normalInput{
             width: 100%;
             position: relative;
-            padding: 0px 10px;
             height: 46px;
             line-height: 22px;
             font-size: 14px;
@@ -163,48 +173,11 @@ a{
                     text-indent: 8px;
                 }
             }
-            .cycode-container{
-                display: none;
-                width: 100%;
-                height: 210px;
-                line-height: 30px;
-                background: #FFF;
-                border: 1px solid #E8E8E8;
-                overflow-x: hidden;
-                overflow-y: auto;
-                position: absolute;
-                left: -1px;
-                top: 50px;
-                z-index: 500;
-                color: #000;
-                .head{
-                    background: #F9F9F9;
-                    padding-left: 10px;
-                }
-                li{
-                    padding: 0 10px;
-                    cursor: pointer;
-                    overflow: hidden;
-                    &:hover{
-                        background: #F9F9F9;
-                    }
-                    .record-country{
-                        height: 30px;
-                        float: left;
-                        cursor: pointer;
-                    }
-                    .record-code{
-                        float: right;
-                        height: 30px;
-                    }
-                }
-            }
         }    
         .geetest-holder{
                 height: 44px;
-                width: 276px;
+                width:300px;
                 position: relative;
-                display: none;
                 .geetest-btn{
                     position: absolute;
                     top: 0;
@@ -264,6 +237,15 @@ a{
                     }
                 }
         }
+        .rememberField{
+            margin-bottom: 25px;
+            height: 24px;
+            line-height: 50px;
+            span{
+                color: #7f7f7f;
+                font-size: 14px;
+            }
+        }
         .fullBtnBlue{
             display: block;
             width: 300px;
@@ -296,7 +278,7 @@ a{
         }
         .qr-btn{
             position: absolute;
-            background: url(../img/pc.png) no-repeat center;
+            background: url(../img/phone\ \(1\).png) no-repeat center;
             top: 10px;
             right: 10px;
             width: 35px;

@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-em{
+em,i{
     font-style: normal;
 }
 li{
@@ -106,16 +106,33 @@ a{
     }
     .cart-col-price{
         width: 220px;
-        text-align: center;    
+        text-align: center;
+        i{
+            color: #666;
+        }    
     }
     .cart-col-number{
         width: 200px;
         text-align: center;
+        input{
+            text-align: center;
+            outline: none;
+        }
+        a{
+            display: inline-block;
+            height: 20px;
+            line-height: 20px;
+            color: #666;
+            font-size: 16px;
+        }
     }
     .cart-col-total{
         width: 160px;
         text-align: center;
-    }
+        i{
+            color: #E02B41;
+        }
+    }   
     .nice{
         width: 110px;
         text-align: right;
@@ -150,6 +167,10 @@ a{
         display: inline-block;
         vertical-align: middle;
         color: #262626;
+        img{
+            width: 100px;
+            height: 100px;
+        }
     }
     .cart-product-info{
         display: inline-block;

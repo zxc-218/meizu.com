@@ -6,39 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles/register.css">
+    <script src="../js/register.js" type="module"></script>
+    <style>
+        .red {
+            color: red;
+        }
+        
+        .green {
+            color: green;
+        }
+    </style>
+    <!-- <script src="../js/library/jquery.js"></script>
+    <script>
+        $(function() {
+            $('#phone').on('input', function() {
+                const xhr = new XMLHttpRequest();
+                xhr.open('get', '../../interface/hasuser.php?phone=' + this.value);
+                xhr.send();
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        let data = JSON.parse(xhr.responseText);
+
+                        if (data.has) {
+                            $('#msg').removeClass('green').addClass('red');
+                        } else {
+                            $('#msg').removeClass('red').addClass('green');
+                        }
+                        $('#msg')[0].innerHTML = data.msg;
+                    }
+                }
+            });
+        });
+    </script> -->
 </head>
 
 <body>
     <div class="content">
         <div class="header-wrapper">
-            <a href="" class="logo">
+            <a href="../html/index.html" class="logo">
                 <i></i>
             </a>
         </div>
         <div class="banner-box">
             <div class="bg-box">
-                <form action="" class="main-form">
+                <form action="../../interface/register.php" class="main-form" method="POST">
                     <div class="tab-title">
                         <a href="">注册 Flyme 账号</a>
                     </div>
-                    <div class="tip-box">
-                        <i class="err-icon"></i>
-                        <span class="tip-font"></span>
-                        <span class="close-icon"></span>
-                    </div>
-                    <div class="tip-text">
-                        我们已发送一条验证码至，请输入短信中的验证码
-                    </div>
                     <div class="normalInput" style="margin-bottom: 36px
-                    ;">
+                    ;margin-top: 30px;">
                         <div class="phone-text">
                             <span class="code-phone">
                              <input value="+86" class="ipt-cycode">
                              <i></i>
                             </span>
-                            <input type="text" name="phone" id="phone" placeholder="手机号码" maxlength="20" class="ipt-phone">
-
+                            <input type="text" name="phone" id="phone" placeholder="手机号码" maxlength="11" minlength="11" class="ipt-phone">
                         </div>
+                        <p id="msg" style="margin-top: 20px
+                        ;"></p>
                         <div class="cycode-container">
                             <div class="country-code">
                                 <div class="container">
@@ -77,6 +102,13 @@
                             </div>
                         </div>
                     </div>
+                    <!-- <div class="normalInput" style="margin-bottom: 36px
+                    ;">
+                        <div class="phone-text">
+                            <input type="text" name="password" id="password" placeholder="密码" maxlength="20" class="ipt-phone">
+                        </div>
+                    </div> -->
+
                     <div class="normalInput" style="display: none;">
                         <input type="text" class="inp-focus" maxlength="6" placeholder="验证码">
                         <span class="form-line"></span>
@@ -103,9 +135,9 @@
                         <a href="">法律声明</a> 和
                         <a href="">隐私政策</a>
                     </div>
-                    <a class="fullBtnBlue" href="">立即注册</a>
+                    <input type="submit" class="fullBtnBlue" value="立即注册">
                     <div class="transferField">
-                        <a class="login" href="">登录</a>
+                        <a class="login" href="../html/login2.html">登录</a>
                     </div>
                 </form>
             </div>
